@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘은 어떤걸 들이킬까??</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">기달려봐</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "오늘은 카페인에 취해보자. 몬스터를 마셔라.",
+                "건강을 생각해라. 그냥 물이나 마시도록.",
+                "근본, 코카콜라를 마셔라.",
+                "다시 한번 돌려라.",
+                "갈갈배배사사이이다다",
+                "지금 메가커피로가서 요거트 스무디를 마셔라."
+                "한번도 마셔본적 없는걸로 도전해봐라.",
+                "돈을 아껴라. 그냥 마시지마라",
+                "나나랑랑드드사사이이다다".
+                "두번 더 돌려서 나온걸로 해라.",
+                "생과일 쥬스 한잔 어떤가?"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
