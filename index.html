@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <p id="message">기달려봐</p>
+    <p id="message">오늘은 어떤걸 들이킬까?</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
     <script>
@@ -30,6 +30,7 @@
                 "나나랑랑드드사사이이다다".
                 "두번 더 돌려서 나온걸로 해라.",
                 "생과일 쥬스 한잔 어떤가?"
+            
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
